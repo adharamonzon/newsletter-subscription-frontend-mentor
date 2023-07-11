@@ -11,15 +11,17 @@ export const CorrectSubscribe : React.FC<Props> = (props) => {
   const navigate = useNavigate();
   console.log(email)
   return (
-    <main className="success">
-      <div className='successIcon'>
-        <img src={successIcon} alt="success icon" />
-      </div>
-      <div>
-        <h1 className='successTitle'>Thanks for subscribing!</h1>
-        <p className='successText'>A Confirmation email has been sent to <strong>{email}</strong>. Please open it and click the button inside to confirm your subscription</p>
-      </div>
-    <button className='successBtn' type='button' onClick={() => navigate('/')}>Dismiss message</button>
-    </main>
+    <div className='feedback-component'>
+      <main className="success">
+        <div className='successIcon'>
+          <img className='icon' src={successIcon} alt="success icon" />
+        </div>
+        <div>
+          <h1 className='successTitle'>Thanks for subscribing!</h1>
+          <p className='successText'>A Confirmation email has been sent to <strong>{email}</strong>. Please open it and click the button inside to confirm your subscription</p>
+        </div>
+      <button className='successBtn' type='button' onClick={() => navigate('/')}>Dismiss message</button>
+      </main>
+    </div>
   )
 }

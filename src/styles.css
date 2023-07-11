@@ -8,8 +8,13 @@
 /* home */
 .header {
   width: 375px;
-  display: flex;
-  justify-content: center;
+  height: 284px;
+  background-image: url('./assets/images/illustration-sign-up-mobile.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  /* display: flex;
+  justify-content: center; */
 }
 
 .header-img {
@@ -110,4 +115,65 @@
   border-radius: 4px;
   color: white;
   background-color: hsl(235, 18%, 26%);
+}
+
+/* desktop version */
+@media (min-width: 1200px) {
+  .mainApp {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:  hsl(235, 18%, 26%);
+  }
+  .subscription {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row-reverse;
+    border-radius: 5px;
+  }
+  .header {
+    height: 430px;
+    margin-right: 20px;
+    background-image: url('./assets/images/illustration-sign-up-desktop.svg');
+    background-size: cover;
+  }
+  .form-inpu{
+    cursor: pointer;
+  }
+  .form-btn{
+    cursor: pointer;
+  }
+  .form-btn:hover {
+    background: rgb(252,75,129);
+    background: linear-gradient(90deg, rgba(252,75,129,1) 18%, rgba(255,209,0,1) 100%);
+  }
+  .feedback-component {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:  hsl(235, 18%, 26%);
+  }
+  .success {
+    width: 350px;
+    height: auto;
+    background-color: white;
+    border-radius: 5px;
+  }
+  .icon {
+    width: 50px;
+  }
+  .successTitle {
+    margin: 20px 0;
+  }
+  .successText {
+    margin-bottom: 20px;
+  }
+  .successBtn:hover {
+    background: rgb(252,75,129);
+    background: linear-gradient(90deg, rgba(252,75,129,1) 18%, rgba(255,209,0,1) 100%);
+  }
 }

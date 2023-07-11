@@ -3,7 +3,6 @@ import {HashRouter, Routes, Route} from 'react-router-dom';
 
 import { MainComponent } from "./components/main";
 import { CorrectSubscribe } from "./components/correctSubscribe";
-import { ErrorSubcribe } from "./components/errorSubscribe";
 
 export const App = () => {
   const [email, setEmail] = React.useState('');
